@@ -56,8 +56,8 @@ const quizload=()=>{
     questionELm.innerText=`${curentquiz+1}:${question}`;
     options.forEach((curoption,index)=>(window[`option_${index+1}`].innerText=curoption));
 }
+  
 
-quizload();
 
 const getdata=()=>{
     let ans_idx=null;
@@ -100,3 +100,5 @@ submitbtn.addEventListener("click",()=>{
         <div class="btn">`
     };
 });
+
+quizload();
